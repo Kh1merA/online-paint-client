@@ -86,13 +86,13 @@ const Canvas = observer(() => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <input type="text" ref={usernameRef} />
+                    <input type="text" ref={usernameRef} className='modal-input'/>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={() => connectionHandler()}>Enter</Button>
+                    <Button onClick={() => connectionHandler()} style={{backgroundColor: "grey", border: "grey"}}>Enter</Button>
                 </Modal.Footer>
             </Modal>
-            <canvas onMouseDown={() => mouseDownHandler()} ref={canvasRef} width={600} height={400}/>
+            <canvas onMouseDown={() => mouseDownHandler()} ref={canvasRef} width={1000} height={500}/>
         </div>
     );
 });

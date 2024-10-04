@@ -1,13 +1,17 @@
 @import "./variables.scss";
 
 .toolbar {
-  height: $toolbar-height;
+  height: 75%;
+  width: $toolbar-weight;
   background-color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
-  box-shadow: 0 4px 5px grey;
+  top: 10%;
+  box-shadow: 2px 2px 15px grey;
+  border-radius: 0 10px 10px 0;
   z-index: 9;
 
   &__btn {
@@ -17,7 +21,7 @@
     outline: none;
     cursor: pointer;
     background-size: cover;
-    margin-left: 10px;
+    margin-top: 10px;
   }
 
   .brush{
@@ -41,12 +45,12 @@
   }
 
   .save{
-    margin-right: 10px;
+    margin-bottom: 10px;
     background: url("../assets/image/save.png") no-repeat center center;
   }
 
   .undo{
-    margin-left: auto;
+    margin-top: auto;
     background: url("../assets/image/undo.png") no-repeat center center;
   }
 }
@@ -55,9 +59,11 @@
   height: $toolbar-height;
   background-color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
-  box-shadow: 0 4px 5px grey;
-  top: $toolbar-height;
+  width: 50%;
+  box-shadow: 0 2px 15px grey;
+  border-radius: 0 0 10px 10px;
+  left: 25%;
 }
